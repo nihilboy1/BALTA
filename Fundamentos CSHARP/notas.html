@@ -225,12 +225,174 @@
       Console.WriteLine("Hello, world!");. Isso torna o código mais conciso e
       fácil de ler.
     </p>
-    ~
+
     <h2>comentários</h2>
     <p>
       É possivel comentar tudo com // usando ctrl+k+c e retirar o comentário das
       linhas selecionadas usando ctrl+k+u | também é possivel abrir e fechar
       comentários com /* */ e usar /// para notações de classe
     </p>
+    <article>
+      <h1>Tipos primitivos</h1>
+      <h2>byte</h2>
+      <p>
+        Em resumo, o tipo "byte" em C# é um tipo de dado numérico inteiro de 8
+        bits, que pode armazenar valores entre 0 e 255. Ele é frequentemente
+        utilizado em operações que envolvem dados binários, como leitura e
+        escrita de arquivos, comunicação com dispositivos de hardware,
+        criptografia, entre outros. Para declarar uma variável do tipo "byte" em
+        C#, usa-se a sintaxe "byte nomeDaVariavel". É importante lembrar que
+        valores negativos não podem ser atribuídos a variáveis desse tipo.
+      </p>
+      <h2>sbyte</h2>
+      <p>
+        Em resumo, o tipo "sbyte" em C# é um tipo de dado numérico inteiro de 8
+        bits que armazena valores com sinal, na faixa de -128 a 127. É utilizado
+        em operações que envolvem manipulação de dados binários com valores com
+        sinal
+      </p>
+      <h2>tipos numéricos inteiros: short, ushort, int, uint, long, ulong</h2>
+      <p>
+        Esses tipos são todos tipos numéricos em C# e diferem em termos de
+        tamanho e alcance de valores que podem armazenar. Em resumo: "short" é
+        um tipo de dado numérico inteiro de 16 bits, que pode armazenar valores
+        na faixa de -32.768 a 32.767. "ushort" é um tipo de dado numérico
+        inteiro de 16 bits, que pode armazenar valores na faixa de 0 a 65.535.
+        "int" é um tipo de dado numérico inteiro de 32 bits, que pode armazenar
+        valores na faixa de -2.147.483.648 a 2.147.483.647. "uint" é um tipo de
+        dado numérico inteiro de 32 bits, que pode armazenar valores na faixa de
+        0 a 4.294.967.295. "long" é um tipo de dado numérico inteiro de 64 bits,
+        que pode armazenar valores na faixa de -9.223.372.036.854.775.808 a
+        9.223.372.036.854.775.807. "ulong" é um tipo de dado numérico inteiro de
+        64 bits, que pode armazenar valores na faixa de 0 a
+        18.446.744.073.709.551.615. Em geral, é recomendado usar o tipo que
+        melhor se adapta às necessidades do programa em termos de precisão e
+        alcance de valores.
+      </p>
+      <h2>tipos numéricos reais: float, double e decimal</h2>
+      <p>
+        Os tipos "float", "double" e "decimal" são tipos numéricos em C# que
+        representam números de ponto flutuante. Embora todos esses tipos possam
+        armazenar valores fracionários, eles diferem em termos de precisão,
+        alcance de valores e uso recomendado. Em resumo: "float" é um tipo de
+        dado numérico de ponto flutuante de 32 bits, que pode armazenar valores
+        na faixa de aproximadamente 1,5 x 10^-45 a 3,4 x 10^38. É usado para
+        cálculos em tempo real, como gráficos, simulações e jogos, onde uma
+        precisão de seis a sete dígitos decimais é geralmente suficiente.
+        "double" é um tipo de dado numérico de ponto flutuante de 64 bits, que
+        pode armazenar valores na faixa de aproximadamente 5,0 x 10^-324 a 1,7 x
+        10^308. Ele é usado em cálculos científicos e matemáticos, onde uma
+        maior precisão é necessária. "decimal" é um tipo de dado numérico de
+        ponto fixo de 128 bits, que pode armazenar valores na faixa de
+        aproximadamente +/- 10^28. Ele é usado em finanças e aplicações
+        comerciais, onde a precisão monetária é importante e os arredondamentos
+        podem ter efeitos significativos nos cálculos. Ao trabalhar com números
+        de ponto flutuante em C#, é importante escolher o tipo que melhor se
+        adapte às necessidades do seu programa em termos de precisão, alcance de
+        valores e tipo de cálculo. Em geral, "float" é adequado para cálculos em
+        tempo real, "double" é a escolha padrão para cálculos matemáticos e
+        científicos, enquanto "decimal" é recomendado para aplicações
+        financeiras e comerciais que exigem alta precisão monetária.
+      </p>
+      <h2>boolean</h2>
+      <p>
+        O tipo "boolean" em C# é um tipo de dado lógico que representa um valor
+        verdadeiro ou falso. Ele é usado para expressar condições em programas,
+        como "se uma condição for verdadeira, execute uma ação, senão execute
+        outra ação". O tipo "boolean" tem dois valores possíveis: "true"
+        (verdadeiro) ou "false" (falso). Em C#, o tipo "boolean" é
+        frequentemente usado em operações de comparação e lógicas, como
+        operadores de igualdade (==), desigualdade (!=), maior que (>), menor
+        que (<), maior ou igual (>=), menor ou igual (<=), bem como operadores
+        lógicos, como "&&" (e), "||" (ou) e "!" (não).
+      </p>
+      <h2>char</h2>
+      <p>
+        O tipo "char" em C# representa um único caractere Unicode e é usado para
+        armazenar caracteres únicos, como letras, números, símbolos e caracteres
+        especiais. Ele é representado entre aspas simples (' ') e pode ser usado
+        para representar valores numéricos em formato de caractere. O tipo
+        "char" também pode ser usado em expressões aritméticas, onde o valor
+        numérico do caractere é usado como um número inteiro.
+      </p>
+      <h2>string</h2>
+      <p>
+        O tipo "string" em C# representa uma sequência de caracteres Unicode e é
+        usado para armazenar texto. Ele é representado entre aspas duplas (" ")
+        e pode ser inicializado com qualquer sequência de caracteres. O tipo
+        "string" é uma classe no C# e fornece uma ampla variedade de
+        funcionalidades e métodos para trabalhar com texto, como concatenação,
+        divisão, formatação e comparação de strings. As strings em C# são
+        imutáveis, o que significa que não podem ser alteradas depois de
+        criadas. No entanto, é possível criar novas strings a partir de strings
+        existentes usando métodos de concatenação e manipulação. O tipo "string"
+        é amplamente utilizado em programas C# para armazenar e manipular dados
+        de texto, como mensagens de usuário, entradas de formulários e dados de
+        arquivos. Ele é essencial para a construção de aplicativos e sistemas
+        que lidam com processamento de texto.
+      </p>
+      <h2>var</h2>
+      <p>
+        O tipo "var" em C# é usado para declarar variáveis sem especificar
+        explicitamente seu tipo. Em vez disso, o tipo é inferido automaticamente
+        pelo compilador com base no valor atribuído à variável. Por exemplo, em
+        vez de declarar uma variável com um tipo explícito, como "int x = 10;",
+        pode-se usar "var x = 10;", e o compilador irá inferir automaticamente o
+        tipo como "int", com base no valor atribuído à variável. O uso do tipo
+        "var" pode tornar o código mais conciso e fácil de ler, especialmente
+        quando se trata de tipos de dados complexos ou longos. No entanto, é
+        importante lembrar que a variável ainda tem um tipo definido pelo valor
+        atribuído, e que o uso excessivo de "var" pode tornar o código menos
+        legível se não for usado com moderação. O tipo "var" não é um tipo de
+        dados em si, mas uma palavra-chave especial que permite a inferência de
+        tipo pelo compilador. Ele é útil em situações em que o tipo da variável
+        é óbvio pelo valor atribuído, mas pode ser desnecessário ou complicado
+        especificar explicitamente o tipo.
+      </p>
+      <h2>object</h2>
+      <p>
+        O tipo "object" em C# é um tipo de dados fundamental que pode armazenar
+        qualquer tipo de valor, incluindo valores de tipos primitivos, objetos,
+        structs e tipos de referência. Ao declarar uma variável do tipo
+        "object", ela pode conter qualquer tipo de valor. Isso é útil quando se
+        deseja escrever código genérico, que pode manipular e trabalhar com
+        diferentes tipos de dados sem conhecer o tipo exato em tempo de
+        compilação. O tipo "object" é a base de hierarquia de tipos em C#, e
+        todos os tipos de dados derivam dele. Ele é usado em muitas situações,
+        como em coleções genéricas, onde é necessário armazenar uma variedade de
+        tipos de objetos em uma única coleção, ou em classes de reflexão, onde é
+        necessário acessar as informações de um objeto em tempo de execução. o
+        tipo "object" do C# e o tipo "any" do TypeScript são semelhantes em
+        alguns aspectos. Ambos os tipos permitem armazenar valores de qualquer
+        tipo de dados. Isso é útil quando se deseja escrever código genérico que
+        pode manipular e trabalhar com diferentes tipos de dados sem conhecer o
+        tipo exato em tempo de compilação. No entanto, há algumas diferenças
+        importantes entre eles. O tipo "any" do TypeScript é usado
+        principalmente em contextos de programação de scripts em que é
+        necessário trabalhar com dados dinâmicos e valores desconhecidos. Por
+        outro lado, o tipo "object" do C# é usado em contextos mais
+        estruturados, como coleções genéricas, onde é necessário armazenar uma
+        variedade de tipos de objetos em uma única coleção, ou em classes de
+        reflexão, onde é necessário acessar as informações de um objeto em tempo
+        de execução.
+      </p>
+      <h2>null</h2>
+      <p>
+        Em C#, o tipo "null" é usado para representar a ausência de um valor
+        válido em uma variável ou objeto. Ele é usado para indicar que a
+        variável não foi inicializada ou que ela não contém nenhum valor válido.
+        O tipo "null" é uma referência nula, o que significa que não aponta para
+        nenhum objeto na memória. Quando uma variável é definida como "null",
+        ela não pode ser usada para acessar nenhum método ou propriedade do
+        objeto. O tipo "null" é frequentemente usado em combinação com
+        verificação de nulos para evitar exceções em tempo de execução e para
+        garantir a segurança do código. Por exemplo, em vez de tentar acessar
+        diretamente uma propriedade ou método de um objeto, é comum verificar se
+        o objeto é nulo primeiro e, em seguida, realizar a operação apenas se o
+        objeto não for nulo. Em resumo, o tipo "null" em C# é usado para indicar
+        a ausência de um valor válido e é uma maneira importante de garantir a
+        segurança do código.
+      </p>
+    </article>
   </body>
 </html>
