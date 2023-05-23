@@ -1,10 +1,13 @@
-
+using System;
 namespace Test{
     
     class testing {
         public static void Main(string[] args)
         {
-            System.Console.WriteLine("");
+            int inteiro = 1;
+            float real = 25.5f;
+
+            inteiro = (int)real;
         }
     }
 }

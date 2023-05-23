@@ -394,5 +394,117 @@
         segurança do código.
       </p>
     </article>
+    <h2>alias</h2>
+    <p>
+      Em C#, um alias é uma palavra-chave usada para criar um nome alternativo
+      para um tipo existente. Isso pode ser útil para simplificar o uso de tipos
+      com nomes longos e complicados, e evitar conflitos de nomeação entre
+      diferentes bibliotecas ou namespaces. É possível criar um alias usando a
+      sintaxe "using [nome do alias] = [nome completo do tipo];". É importante
+      usar aliases com moderação e escolher nomes descritivos e significativos.
+    </p>
+    <h2>valores padrão</h2>
+    <p>
+      Em C#, valores padrão são valores atribuídos automaticamente às variáveis
+      e campos quando eles são criados, a menos que um valor inicial seja
+      especificado explicitamente. O valor padrão é determinado pelo compilador
+      C# e depende do tipo de dado da variável. Por exemplo, para tipos de valor
+      numéricos, o valor padrão é 0 e para tipos de valor booleanos, é false.
+      Para tipos de referência, o valor padrão é null, que indica que a variável
+      não faz referência a nenhum objeto na memória. É importante conhecer os
+      valores padrão em C# para evitar comportamentos inesperados em seu código
+      e garantir que suas variáveis tenham valores válidos e consistentes. Se
+      você não definir um valor inicial para uma variável, ela receberá o valor
+      padrão correspondente ao seu tipo de dados. Se você deseja definir um
+      valor inicial, pode fazê-lo no momento da declaração.
+    </p>
+    <h2>conversões implícitas</h2>
+    <p>
+      Conversões implícitas no C# são conversões de tipos de dados que ocorrem
+      automaticamente pelo compilador, sem a necessidade de um código explícito
+      por parte do desenvolvedor. Isso significa que o C# pode converter um tipo
+      de dado em outro tipo compatível sem que o desenvolvedor precise se
+      preocupar com isso. Por exemplo, um valor inteiro pode ser convertido
+      implicitamente para um valor de ponto flutuante, se necessário. As
+      conversões implícitas são permitidas apenas entre tipos compatíveis. Por
+      exemplo, um tipo inteiro pode ser implicitamente convertido para um tipo
+      longo, porque um longo pode armazenar valores inteiros maiores do que um
+      tipo int. No entanto, um tipo inteiro não pode ser implicitamente
+      convertido para um tipo string, pois são tipos incompatíveis.
+    </p>
+    <h2>conversões explícitas</h2>
+    <p>
+      Conversões explícitas no C# são conversões de tipos de dados que exigem
+      uma sintaxe explícita pelo desenvolvedor para que ocorram. Ocorrem quando
+      o tipo de dados de origem é convertido em um tipo de dados de destino
+      incompatível, como converter um tipo de dados inteiro em um tipo de dados
+      booleano. Para realizar uma conversão explícita, é necessário usar um
+      operador de conversão explícito ou uma chamada de método de conversão. Por
+      exemplo, para converter um valor inteiro em um valor booleano, você pode
+      usar o operador (bool) ou o método Convert.ToBoolean(). No entanto, as
+      conversões explícitas devem ser usadas com cuidado, pois podem levar a
+      perda de informações ou a resultados imprevisíveis. Por isso, é importante
+      garantir que as conversões sejam necessárias e que os tipos de dados sejam
+      compatíveis antes de usá-las.
+    </p>
+    <h2>.parse</h2>
+    <p>
+      No C#, o método .Parse é usado para converter uma representação de string
+      de um tipo de dados primitivo em seu equivalente nesse tipo de dados. Ele
+      é comumente usado para converter strings em números inteiros, números de
+      ponto flutuante, datas, etc. A sintaxe básica do .Parse é a seguinte:
+      tipoDeDado.Parse(stringValor);
+    </p>
+    <h2>Convert.</h2>
+    <p>
+      No C#, o método Convert é usado para converter um valor de um tipo de
+      dados em outro tipo de dados. Ele pode ser usado para converter entre
+      tipos primitivos, como números inteiros e números de ponto flutuante, além
+      de conversões de outros tipos de dados, como datas e tipos personalizados.
+      A sintaxe básica do Convert é a seguinte:Convert.ToTipoDeDado(valor);
+    </p>
+    <h2>heap e stack</h2>
+    <p>
+      Os objetos no "heap" são referenciados por ponteiros ou referências. As
+      variáveis que armazenam referências para objetos no "heap" são, na
+      verdade, ponteiros para a localização da memória onde o objeto está
+      armazenado. O acesso a objetos no "heap" é um pouco mais lento do que o
+      acesso a variáveis na "stack", pois requer o uso de ponteiros ou
+      referências. Em resumo, a "stack" é usada para armazenar variáveis locais
+      e informações de contexto de métodos, com alocação e liberação de memória
+      rápidas. O "heap" é usado para alocar objetos de forma dinâmica, com maior
+      flexibilidade, mas com custo de desempenho mais elevado e gerenciamento
+      explícito ou automático por meio do coletor de lixo. -- Tipos alocados na
+      "stack": Variáveis locais de tipos primitivos, como int, float, bool,
+      char, etc. Parâmetros de métodos e funções. Referências a objetos alocados
+      no "heap" (ponteiros). Tipos alocados no "heap": Objetos criados com a
+      palavra-chave "new", como classes, estruturas (structs) e arrays. Objetos
+      que são instâncias de classes definidas pelo usuário. Strings, que são
+      imutáveis e armazenadas no "heap". Objetos que são retornados por
+      referência.
+    </p>
+    <h2>structs</h2>
+    <p>
+      Em C#, uma struct (estrutura) é um tipo de dado que permite agrupar
+      diferentes variáveis relacionadas em uma única unidade. Ao contrário das
+      classes, que são tipos de referência e são alocadas no heap, as structs
+      são tipos de valor e geralmente são alocadas na stack. Aqui estão algumas
+      características importantes das structs: Em resumo, as structs são tipos
+      de valor que permitem agrupar variáveis relacionadas em uma única unidade.
+      Elas são alocadas na stack, têm semântica de valor e não suportam herança.
+      As structs são úteis para representar pequenas unidades de dados e podem
+      melhorar o desempenho em determinadas situações.
+    </p>
+    <h2>enum</h2>
+    <p>
+      Em C#, o "enum" (enumeração) é um tipo de dado especial que permite
+      definir um conjunto de valores constantes nomeados. Ele é usado para
+      representar um conjunto de opções ou estados possíveis. O "enum" é útil
+      quando você precisa limitar um valor a um conjunto específico de opções
+      pré-definidas. Para criar um "enum" em C#, você declara uma nova estrutura
+      de dados usando a palavra-chave "enum" seguida pelo nome do tipo. Em
+      seguida, você lista os valores constantes separados por vírgulas dentro de
+      chaves.
+    </p>
   </body>
 </html>
